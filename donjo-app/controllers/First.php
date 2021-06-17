@@ -100,6 +100,34 @@ class First extends Web_Controller {
 		$this->load->model('plan_garis_model');
 	}
 
+	// public function auth()
+	// {
+	// 	if ($_SESSION['mandiri_wait'] != 1)
+	// 	{
+	// 		$this->first_m->siteman();
+	// 	}
+	// 	if ($_SESSION['mandiri'] == 1)
+	// 	{
+	// 		redirect('mandiri_web/mandiri/1/1');
+	// 	}
+	// 	else
+	// 	{
+	// 		redirect();
+	// 	}
+	// }
+
+	// public function logout()
+	// {
+	// 	$this->first_m->logout();
+	// 	redirect();
+	// }
+
+	// public function ganti()
+	// {
+	// 	$this->first_m->ganti();
+	// 	redirect();
+	// }
+
 	public function index($p=1)
 	{
 		$data = $this->includes;
@@ -618,7 +646,7 @@ class First extends Web_Controller {
 		$kode_desa = $data['desa']['kode_desa'];
 		if ($this->data_publik->has_internet_connection())
 		{
-			$this->data_publik->set_api_url("https://idm.kemendesa.go.id/open/api/desa/rumusan/$kode_desa/2021", "idm_$kode_desa")
+			$this->data_publik->set_api_url("https://idm.kemendesa.go.id/open/api/desa/rumusan/$kode_desa/2021", "idm_2021_$kode_desa")
 				->set_interval(7)
 				->set_cache_folder(FCPATH.'desa');
 

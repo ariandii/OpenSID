@@ -39,7 +39,6 @@
 						</tr>
 					<?php endforeach; ?>
 				</tbody>
-				<tfoot>
 					<tr style="background-color:#BDD498;font-weight:bold;">
 						<td colspan="5" align="left"><label>TOTAL</label></td>
 						<td align="right"><?= $total['total_kk']?></td>
