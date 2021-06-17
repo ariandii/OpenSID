@@ -44,6 +44,8 @@ class Permohonan_surat extends Mandiri_Controller {
 
 	private $cek_anjungan;
 
+	private $cek_anjungan;
+
 	public function __construct()
 	{
 		parent::__construct();

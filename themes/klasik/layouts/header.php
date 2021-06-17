@@ -94,7 +94,7 @@
 		<?php endif ?>
 		<!-- Ionicons -->
 		<link rel="stylesheet" href="<?= base_url()?>assets/bootstrap/css/ionicons.min.css">
-
+		
 		<!-- DataTables -->
 		<link rel="stylesheet" href="<?= base_url()?>assets/css/leaflet.css" />
 		<link rel="stylesheet" href="<?= base_url()?>assets/css/mapbox-gl.css" />
@@ -121,19 +121,12 @@
 		<script src="<?= base_url()?>assets/js/highcharts/sankey.js"></script>
 		<script src="<?= base_url()?>assets/js/highcharts/organization.js"></script>
 		<script src="<?= base_url()?>assets/js/highcharts/accessibility.js"></script>
-
-		<!-- Kelompok JS ini dibutuhkan untuk menggunakan script.js. TODO: pecah script.js -->
-		<script src="<?= base_url()?>assets/bootstrap/js/select2.full.min.js"></script>
-		<script src="<?= base_url()?>assets/bootstrap/js/bootstrap-datepicker.min.js"></script>
-		<script src="<?= base_url()?>assets/bootstrap/js/moment.min.js"></script>
-		<script src="<?= base_url()?>assets/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
-		<script src="<?= base_url()?>assets/bootstrap/js/bootstrap-colorpicker.min.js"></script>
-		<script src="<?= base_url()?>assets/bootstrap/js/bootstrap3-wysihtml5.all.min.js"></script>
-
 		<!-- Untuk carousel, slider, teks_berjalan dan widget aparatur_desa -->
-		<script src="<?= base_url()?>assets/front/js/jquery.cycle2.min.js"></script>
-		<script src="<?= base_url()?>assets/front/js/jquery.cycle2.carousel.js"></script>
+		<script src="<?php echo base_url()?>assets/front/js/jquery.cycle2.min.js"></script>
+		<script src="<?php echo base_url()?>assets/front/js/jquery.cycle2.carousel.js"></script>
 		<?php $this->load->view('global/validasi_form'); ?>
+		<!-- Script-->
+		<script src="<?= base_url(); ?>assets/js/script.js"></script>
 
 		<!-- Diperlukan untuk javascript yg mengakses resources -->
 		<script type="text/javascript">
